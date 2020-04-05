@@ -57,8 +57,9 @@ public class GUISecondPage extends JFrame {
     private void initComponents() {
 
         label = new JLabel("Do you want to create or see a password?:");
-        buttonCreate = new JButton("Create password");
-        buttonSee = new JButton("See password");
+        buttonCreate = new JButton("Create a password");
+        buttonSee = new JButton("See a password");
+        buttonDelete = new JButton("Delete a password");
 
         buttonCreate.addActionListener(new ActionListener() {
             @Override
