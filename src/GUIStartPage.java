@@ -53,6 +53,7 @@ public class GUIStartPage extends JFrame {
         button.setForeground(Color.WHITE);
         eingabe.setBackground(Color.BLACK);
         eingabe.setForeground(Color.WHITE);
+        eingabe.setCaretColor(Color.WHITE);
     }
 
 

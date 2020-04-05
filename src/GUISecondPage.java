@@ -29,7 +29,7 @@ public class GUISecondPage extends JFrame {
         initComponents();
         addComponentsToPanel(panel);
 
-        setColorOfButtons();
+        setColorOfComponents();
 
         setLocationRelativeTo(null);
         setVisible(true);
@@ -48,9 +48,9 @@ public class GUISecondPage extends JFrame {
 
     }
 
-    private void setColorOfButtons()
+    private void setColorOfComponents()
     {
-        
+
     }
 
 
