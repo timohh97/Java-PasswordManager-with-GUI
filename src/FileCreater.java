@@ -6,13 +6,17 @@ import java.io.PrintWriter;
 public class FileCreater {
 
 
+
+
     public static void createTextFile(String title, String password) throws IOException {
-        File f = new File("C:\\Users\\timos\\Desktop\\Passwords\\"+title+".txt");
-        f.createNewFile();
-        FileWriter fw = new FileWriter(f);
+        File file = new File("C:\\Users\\timos\\Desktop\\Passwords\\"+title+".txt");
+        file.createNewFile();
+        FileWriter fw = new FileWriter(file);
         PrintWriter pw = new PrintWriter(fw);
 
         pw.println(password);
         pw.close();
+        fw.close();
     }
+
 }

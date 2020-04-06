@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/FileDeleter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/PasswordReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/PasswordWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FileDeleter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PasswordReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PasswordWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/FileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/CreatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/CreatePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/DeletePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/DeletePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/FileDeleter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/FileDeleter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/SeePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/SeePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIStartPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIStartPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIStartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIStartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/SecondPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/SecondPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreatePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreatePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeletePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeletePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileCreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileCreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUICreatePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUICreatePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUIDeletePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIDeletePassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUISecondPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISecondPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUISeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISeePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUIStartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIStartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasswordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SecondPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +54,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartPage">
     <configuration name="StartPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StartPage" />
+      <module name="PasswordManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="PasswordManager" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -58,6 +72,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.StartPage" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -75,46 +90,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586178183867">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586212038424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586178183867" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586212038424" />
     <state x="566" y="297" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586121874997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="297" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586121874997" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586183034482">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586212218541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586183034482">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586212218541" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586212218541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586183034482">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586212218541" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586212218541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586183034482">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586212218541" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586212218541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586182841947">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586212218541" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586209392068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586182841947">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586209392068" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586209392068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586182841947">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586209392068" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586209392068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586182841947">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586209392068" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586209392068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586209392068" />
     <state x="431" y="145" key="search.everywhere.popup" timestamp="1586177654503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

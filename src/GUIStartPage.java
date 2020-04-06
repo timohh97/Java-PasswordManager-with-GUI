@@ -30,9 +30,9 @@ public class GUIStartPage extends JFrame {
 
         setColorOfComponents();
 
+        pack();
         setLocationRelativeTo(null);
         setVisible(true);
-        pack();
         setResizable(false);
 
     }
@@ -69,7 +69,7 @@ public class GUIStartPage extends JFrame {
                 String nutzerEingabe = eingabe.getText();
                 if(nutzerEingabe.equals(masterPassword))
                 {
-                    SecondPage.constructCreateOrSeeGUI();
+                    SecondPage.buildSecondPageGUI();
                     dispose();
                 }
                 else

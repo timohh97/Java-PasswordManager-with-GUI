@@ -22,6 +22,7 @@ public class PasswordReader {
             passwordWrapper.setTitleOfPassword(titleOfPassword);
 
             passwordWrapperList.add(passwordWrapper);
+            scan.close();
 
         }
 

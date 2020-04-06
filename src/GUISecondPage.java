@@ -32,9 +32,9 @@ public class GUISecondPage extends JFrame {
 
         setColorOfComponents();
 
+        pack();
         setLocationRelativeTo(null);
         setVisible(true);
-        pack();
         setResizable(false);
 
     }
@@ -76,6 +76,18 @@ public class GUISecondPage extends JFrame {
                 dispose();
                 try {
                     SeePassword.buildSeePasswordGUI();
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        buttonDelete.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                try {
+                    DeletePassword.buildDeletePasswordGUI();
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
                 }

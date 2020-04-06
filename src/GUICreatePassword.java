@@ -10,6 +10,7 @@ public class GUICreatePassword extends JFrame {
     private JLabel label;
     private JTextField descriptionOfPassword;
     private JButton generatePassword;
+    private JButton goBackButton;
 
 
     public GUICreatePassword(String titel){
@@ -30,9 +31,9 @@ public class GUICreatePassword extends JFrame {
 
     setColorOfButtons();
 
+    pack();
     setLocationRelativeTo(null);
     setVisible(true);
-    pack();
     setResizable(false);
 
 }
@@ -43,6 +44,7 @@ public class GUICreatePassword extends JFrame {
         panel.add(label);
         panel.add(descriptionOfPassword);
         panel.add(generatePassword);
+        panel.add(goBackButton);
 
 
     }
@@ -58,6 +60,7 @@ public class GUICreatePassword extends JFrame {
         generatePassword = new JButton("Generate a password");
         label = new JLabel("Type in a title for the new password:");
         descriptionOfPassword = new JTextField();
+        goBackButton = new JButton("Go back");
 
         generatePassword.addActionListener(new ActionListener() {
             @Override
@@ -74,10 +77,18 @@ public class GUICreatePassword extends JFrame {
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
-                    dispose();
+
                     JOptionPane.showMessageDialog(GUICreatePassword.this, "The password is: " + password);
-                    SecondPage.constructCreateOrSeeGUI();
+                    descriptionOfPassword.setText("");
                 }
+            }
+        });
+
+        goBackButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                SecondPage.buildSecondPageGUI();
             }
         });
 

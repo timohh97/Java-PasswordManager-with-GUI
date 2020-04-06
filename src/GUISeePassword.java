@@ -1,22 +1,25 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 
 public class GUISeePassword extends JFrame {
 
     private JLabel label;
     private JComboBox<String> dropDownMenu;
+    private JButton goBackButton;
+    private JButton seePasswordButton;
 
 
-    public GUISeePassword(String titel) throws FileNotFoundException {
-        setTitle(titel);
+    public GUISeePassword(String title) throws FileNotFoundException {
+        setTitle(title);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        GridLayout mainLayout = new GridLayout(5,1);
-        mainLayout.setVgap(5);
+        GridLayout mainLayout = new GridLayout(4,1);
+        mainLayout.setVgap(15);
 
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30,60,60,60));
@@ -30,12 +33,11 @@ public class GUISeePassword extends JFrame {
 
         setColorOfButtons();
 
+        pack();
         setLocationRelativeTo(null);
         setVisible(true);
-        pack();
         setResizable(false);
 
-        System.out.println(PasswordReader.readAllPasswords());
 
     }
 
@@ -44,6 +46,9 @@ public class GUISeePassword extends JFrame {
     {
         panel.add(label);
         panel.add(dropDownMenu);
+        panel.add(seePasswordButton);
+        panel.add(goBackButton);
+
 
 
 
@@ -73,7 +78,35 @@ public class GUISeePassword extends JFrame {
         }
 
         dropDownMenu = new JComboBox<String>(dropDownMenuArray);
+        goBackButton = new JButton("Go back");
+        seePasswordButton = new JButton("See password");
 
 
+        goBackButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                  dispose();
+                  SecondPage.buildSecondPageGUI();
+            }
+        });
+
+        seePasswordButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int selectedPasswordTitleIndex =dropDownMenu.getSelectedIndex();
+                String password = passwordWrapperList.get(selectedPasswordTitleIndex).getPassword();
+                JOptionPane.showMessageDialog(GUISeePassword.this,"The password is: "+password);
+            }
+        });
+
+
+    }
+
+    public JComboBox<String> getDropDownMenu() {
+        return dropDownMenu;
+    }
+
+    public void setDropDownMenu(JComboBox<String> dropDownMenu) {
+        this.dropDownMenu = dropDownMenu;
     }
 }

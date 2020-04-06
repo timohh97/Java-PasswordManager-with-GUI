@@ -2,6 +2,6 @@ public class CreatePassword {
 
     public static void buildCreatePasswordGUI()
     {
-        GUICreatePassword gui = new GUICreatePassword("Create a password");
+        GUICreatePassword gui = new GUICreatePassword("Create password");
     }
 }
