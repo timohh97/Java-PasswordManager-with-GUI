@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/FileDeleter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/PasswordReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/PasswordManager/PasswordWrapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FileDeleter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PasswordReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PasswordWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/FileReader.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/SeePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/SeePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileReader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUISecondPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISecondPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUISeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISeePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeePassword.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +75,49 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586122538856">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1586178183867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586122538856" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586178183867" />
     <state x="566" y="297" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586121874997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="297" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586121874997" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586129370226">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586183034482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586129370226" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586129370226">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586183034482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586129370226" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586129370226">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586183034482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586129370226" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586129370226">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586183034482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586129370226" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586183034482" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586182841947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586182841947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586182841947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586182841947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586182841947" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1586177654503">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586177654503" />
   </component>
 </project>

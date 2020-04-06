@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 
 public class GUISecondPage extends JFrame {
 
@@ -66,6 +67,18 @@ public class GUISecondPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 dispose();
                 CreatePassword.buildCreatePasswordGUI();
+            }
+        });
+
+        buttonSee.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                try {
+                    SeePassword.buildSeePasswordGUI();
+                } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
