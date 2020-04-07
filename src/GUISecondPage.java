@@ -85,9 +85,19 @@ public class GUISecondPage extends JFrame {
         buttonSee.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 try {
-                    SeePassword.buildSeePasswordGUI();
+                    if(PasswordReader.readAllPasswords().size()==0)
+                    {
+                        JOptionPane.showMessageDialog(GUISecondPage.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>There are no passwords!");
+                    }
+                    else {
+                        dispose();
+                        try {
+                            SeePassword.buildSeePasswordGUI();
+                        } catch (FileNotFoundException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
                 }
@@ -97,9 +107,19 @@ public class GUISecondPage extends JFrame {
         buttonDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose();
                 try {
-                    DeletePassword.buildDeletePasswordGUI();
+                    if(PasswordReader.readAllPasswords().size()==0)
+                    {
+                        JOptionPane.showMessageDialog(GUISecondPage.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>There are no passwords!");
+                    }
+                    else {
+                        dispose();
+                        try {
+                            DeletePassword.buildDeletePasswordGUI();
+                        } catch (FileNotFoundException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
                 }
