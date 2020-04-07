@@ -100,7 +100,7 @@ public class GUIDeletePassword extends JFrame {
                 dropDownMenu.removeItemAt(selectedPasswordTitleIndex);
                 FileDeleter.deleteTextFile(selectedPasswordTitle);
                 dispose();
-                JOptionPane.showMessageDialog(GUIDeletePassword.this,"Password removed successfully!");
+                JOptionPane.showMessageDialog(GUIDeletePassword.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>Password removed successfully!");
                 SecondPage.buildSecondPageGUI();
 
 

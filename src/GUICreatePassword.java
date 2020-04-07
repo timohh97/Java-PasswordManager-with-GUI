@@ -81,11 +81,11 @@ public class GUICreatePassword extends JFrame {
 
                 if(descriptionOfPassword.getText().length()==0)
                 {
-                    JOptionPane.showMessageDialog(GUICreatePassword.this, "Please type in at least one character!");
+                    JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>Type in at least one character!");
                 }
                 else if(descriptionOfPassword.getText().length()>15)
                 {
-                    JOptionPane.showMessageDialog(GUICreatePassword.this, "The title is too big!");
+                    JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>The title is too big!");
                 }
                 else {
                     String password = PasswordGenerator.generate(20);
@@ -95,7 +95,7 @@ public class GUICreatePassword extends JFrame {
                         ex.printStackTrace();
                     }
 
-                    JOptionPane.showMessageDialog(GUICreatePassword.this, "The password is: " + password);
+                    JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>The password is: " + password);
                     descriptionOfPassword.setText("");
                 }
             }

@@ -110,7 +110,7 @@ public class GUISeePassword extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 int selectedPasswordTitleIndex =dropDownMenu.getSelectedIndex();
                 String password = passwordWrapperList.get(selectedPasswordTitleIndex).getPassword();
-                JOptionPane.showMessageDialog(GUISeePassword.this,"The password is: "+password);
+                JOptionPane.showMessageDialog(GUISeePassword.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>The password is: "+password);
             }
         });
 

@@ -7,23 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PasswordManager_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PasswordManager_jar/PasswordManager.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISecondPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUICreatePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUICreatePassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUIDeletePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIDeletePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUISecondPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISecondPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUISeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISeePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUIStartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIStartPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,22 +94,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="297" width="403" height="236" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586248392364" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586250608604">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586264105460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586250608604" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586250608604">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586264105460" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586258946715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586250608604" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586250608604">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586258946715" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586258946715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586250608604" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586250608604">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586258946715" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586258946715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586250608604" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586258946715" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586258946715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586258946715" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586212387374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -139,6 +134,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586248087358" />
+    <state x="209" y="33" key="new project wizard" timestamp="1586251734876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586251734876" />
     <state x="431" y="145" key="search.everywhere.popup" timestamp="1586177654503">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
