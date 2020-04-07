@@ -23,7 +23,7 @@ public class GUISecondPage extends JFrame {
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30,60,60,60));
         panel.setLayout(mainLayout);
-        panel.setBackground(Color.PINK);
+        panel.setBackground(Color.BLACK);
 
         add(panel,BorderLayout.CENTER);
 
@@ -51,6 +51,18 @@ public class GUISecondPage extends JFrame {
 
     private void setColorOfComponents()
     {
+        label.setForeground(Color.WHITE);
+        buttonCreate.setBackground(Color.BLACK);
+        buttonSee.setBackground(Color.BLACK);
+        buttonDelete.setBackground(Color.BLACK);
+        buttonCreate.setForeground(Color.WHITE);
+        buttonSee.setForeground(Color.WHITE);
+        buttonDelete.setForeground(Color.WHITE);
+        label.setFont(label.getFont().deriveFont(32.0f));
+        buttonCreate.setFont(buttonCreate.getFont().deriveFont(32.0f));
+        buttonSee.setFont(buttonSee.getFont().deriveFont(32.0f));
+        buttonDelete.setFont(buttonDelete.getFont().deriveFont(32.0f));
+
 
     }
 

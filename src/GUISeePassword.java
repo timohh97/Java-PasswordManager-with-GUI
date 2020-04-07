@@ -24,7 +24,7 @@ public class GUISeePassword extends JFrame {
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30,60,60,60));
         panel.setLayout(mainLayout);
-        panel.setBackground(Color.PINK);
+        panel.setBackground(Color.BLACK);
 
         add(panel,BorderLayout.CENTER);
 
@@ -37,6 +37,7 @@ public class GUISeePassword extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         setResizable(false);
+
 
 
     }
@@ -52,10 +53,24 @@ public class GUISeePassword extends JFrame {
 
 
 
+
     }
 
     private void setColorOfButtons()
     {
+        label.setForeground(Color.WHITE);
+        dropDownMenu.setBackground(Color.WHITE);
+        dropDownMenu.setForeground(Color.BLACK);
+        seePasswordButton.setForeground(Color.WHITE);
+        seePasswordButton.setBackground(Color.BLACK);
+        goBackButton.setBackground(Color.BLACK);
+        goBackButton.setForeground(Color.WHITE);
+        label.setFont(label.getFont().deriveFont(32.0f));
+        dropDownMenu.setFont(dropDownMenu.getFont().deriveFont(32.0f));
+        seePasswordButton.setFont(seePasswordButton.getFont().deriveFont(32.0f));
+        goBackButton.setFont(goBackButton.getFont().deriveFont(32.0f));
+
+
 
     }
 

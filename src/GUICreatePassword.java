@@ -22,7 +22,7 @@ public class GUICreatePassword extends JFrame {
     JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30,60,60,60));
         panel.setLayout(mainLayout);
-        panel.setBackground(Color.PINK);
+        panel.setBackground(Color.BLACK);
 
     add(panel,BorderLayout.CENTER);
 
@@ -51,6 +51,19 @@ public class GUICreatePassword extends JFrame {
 
     private void setColorOfButtons()
     {
+        label.setForeground(Color.WHITE);
+        generatePassword.setForeground(Color.WHITE);
+        generatePassword.setBackground(Color.BLACK);
+        goBackButton.setBackground(Color.BLACK);
+        goBackButton.setForeground(Color.WHITE);
+        descriptionOfPassword.setBackground(Color.BLACK);
+        descriptionOfPassword.setForeground(Color.WHITE);
+        descriptionOfPassword.setCaretColor(Color.WHITE);
+        label.setFont(label.getFont().deriveFont(32.0f));
+        goBackButton.setFont(goBackButton.getFont().deriveFont(32.0f));
+        generatePassword.setFont(generatePassword.getFont().deriveFont(32.0f));
+        descriptionOfPassword.setFont(descriptionOfPassword.getFont().deriveFont(32.0f));
+
 
     }
 
@@ -66,7 +79,11 @@ public class GUICreatePassword extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(descriptionOfPassword.getText().length()>15)
+                if(descriptionOfPassword.getText().length()==0)
+                {
+                    JOptionPane.showMessageDialog(GUICreatePassword.this, "Please type in at least one character!");
+                }
+                else if(descriptionOfPassword.getText().length()>15)
                 {
                     JOptionPane.showMessageDialog(GUICreatePassword.this, "The title is too big!");
                 }

@@ -54,6 +54,9 @@ public class GUIStartPage extends JFrame {
         eingabe.setBackground(Color.BLACK);
         eingabe.setForeground(Color.WHITE);
         eingabe.setCaretColor(Color.WHITE);
+        label.setFont(label.getFont().deriveFont(32.0f));
+        button.setFont(button.getFont().deriveFont(32.0f));
+        eingabe.setFont(eingabe.getFont().deriveFont(32.0f));
     }
 
 

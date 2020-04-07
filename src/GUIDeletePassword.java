@@ -12,18 +12,19 @@ public class GUIDeletePassword extends JFrame {
     private JLabel label;
     private JComboBox<String> dropDownMenu;
     private JButton deleteButton;
+    private JButton goBackButton;
 
 
     public GUIDeletePassword(String title) throws FileNotFoundException {
         setTitle(title);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        GridLayout mainLayout = new GridLayout(3,1);
+        GridLayout mainLayout = new GridLayout(4,1);
         mainLayout.setVgap(15);
 
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30,60,60,60));
         panel.setLayout(mainLayout);
-        panel.setBackground(Color.PINK);
+        panel.setBackground(Color.BLACK);
 
         add(panel,BorderLayout.CENTER);
 
@@ -46,6 +47,7 @@ public class GUIDeletePassword extends JFrame {
         panel.add(label);
         panel.add(dropDownMenu);
         panel.add(deleteButton);
+        panel.add(goBackButton);
 
 
 
@@ -54,7 +56,17 @@ public class GUIDeletePassword extends JFrame {
 
     private void setColorOfButtons()
     {
-
+        label.setForeground(Color.WHITE);
+        dropDownMenu.setBackground(Color.WHITE);
+        dropDownMenu.setForeground(Color.BLACK);
+        deleteButton.setForeground(Color.WHITE);
+        deleteButton.setBackground(Color.BLACK);
+        goBackButton.setBackground(Color.BLACK);
+        goBackButton.setForeground(Color.WHITE);
+        label.setFont(label.getFont().deriveFont(32.0f));
+        dropDownMenu.setFont(dropDownMenu.getFont().deriveFont(32.0f));
+        deleteButton.setFont(deleteButton.getFont().deriveFont(32.0f));
+        goBackButton.setFont(goBackButton.getFont().deriveFont(32.0f));
     }
 
 
@@ -77,6 +89,7 @@ public class GUIDeletePassword extends JFrame {
 
         dropDownMenu = new JComboBox<String>(dropDownMenuArray);
         deleteButton = new JButton("Delete");
+        goBackButton = new JButton("Go back");
 
 
         deleteButton.addActionListener(new ActionListener() {
@@ -91,6 +104,14 @@ public class GUIDeletePassword extends JFrame {
                 SecondPage.buildSecondPageGUI();
 
 
+            }
+        });
+
+        goBackButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                SecondPage.buildSecondPageGUI();
             }
         });
 
