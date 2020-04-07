@@ -6,16 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PasswordManager_jar/PasswordManager.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUICreatePassword$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUIDeletePassword$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PasswordManager/GUISeePassword$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUICreatePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUICreatePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUIDeletePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIDeletePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUISeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISeePassword.java" afterDir="false" />
-    </list>
+    <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
