@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class GUICreatePassword extends JFrame {
@@ -79,6 +80,8 @@ public class GUICreatePassword extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                boolean passwordAlreadyExists = false;
+
                 if(descriptionOfPassword.getText().length()==0)
                 {
                     JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>Type in at least one character!");
@@ -88,6 +91,24 @@ public class GUICreatePassword extends JFrame {
                     JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>The title is too big!");
                 }
                 else {
+                    try {
+
+                        String titleOfNewPassword = descriptionOfPassword.getText();
+
+                        for(PasswordWrapper pw : PasswordReader.readAllPasswords())
+                        {
+                            if(pw.getTitleOfPassword().equals(titleOfNewPassword+".txt"))
+                            {
+                                JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>A password for this title already exists!");
+                                passwordAlreadyExists = true;
+                            }
+
+                        }
+
+
+                    } catch (FileNotFoundException ex) {
+                        ex.printStackTrace();
+                    }  if(!passwordAlreadyExists){
                     String password = PasswordGenerator.generate(20);
                     try {
                         FileCreater.createTextFile(descriptionOfPassword.getText(),password);
@@ -96,7 +117,7 @@ public class GUICreatePassword extends JFrame {
                     }
 
                     JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>The password is: " + password);
-                    descriptionOfPassword.setText("");
+                    descriptionOfPassword.setText("");}
                 }
             }
         });
