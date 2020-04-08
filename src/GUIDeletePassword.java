@@ -15,7 +15,7 @@ public class GUIDeletePassword extends JFrame {
     private JButton goBackButton;
 
 
-    public GUIDeletePassword(String title) throws FileNotFoundException {
+    public GUIDeletePassword(String title) throws IOException {
         setTitle(title);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         GridLayout mainLayout = new GridLayout(4,1);
@@ -70,10 +70,10 @@ public class GUIDeletePassword extends JFrame {
     }
 
 
-    private void initComponents() throws FileNotFoundException {
+    private void initComponents() throws IOException {
 
         label = new JLabel("Which password do you want to delete? Please choose:");
-        java.util.List<PasswordWrapper> passwordWrapperList = PasswordReader.readAllPasswords();
+        java.util.List<PasswordWrapper> passwordWrapperList = FileReader.readAllPasswords();
         List<String> passwordTitlesList = new ArrayList<String>();
         for(PasswordWrapper wrap : passwordWrapperList) {
 
@@ -98,7 +98,11 @@ public class GUIDeletePassword extends JFrame {
                int selectedPasswordTitleIndex =dropDownMenu.getSelectedIndex();
                 String selectedPasswordTitle = passwordWrapperList.get(selectedPasswordTitleIndex).getTitleOfPassword();
                 dropDownMenu.removeItemAt(selectedPasswordTitleIndex);
-                FileDeleter.deleteTextFile(selectedPasswordTitle);
+                try {
+                    FileDeleter.deleteTextFile(selectedPasswordTitle);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 dispose();
                 JOptionPane.showMessageDialog(GUIDeletePassword.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>Password removed successfully!");
                 SecondPage.buildSecondPageGUI();

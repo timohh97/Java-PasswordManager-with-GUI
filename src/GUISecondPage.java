@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class GUISecondPage extends JFrame {
 
@@ -86,7 +87,7 @@ public class GUISecondPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    if(PasswordReader.readAllPasswords().size()==0)
+                    if(FileReader.readAllPasswords().size()==0)
                     {
                         JOptionPane.showMessageDialog(GUISecondPage.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>There are no passwords!");
                     }
@@ -100,6 +101,8 @@ public class GUISecondPage extends JFrame {
                     }
                 } catch (FileNotFoundException ex) {
                     ex.printStackTrace();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
             }
         });
@@ -108,7 +111,7 @@ public class GUISecondPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    if(PasswordReader.readAllPasswords().size()==0)
+                    if(FileReader.readAllPasswords().size()==0)
                     {
                         JOptionPane.showMessageDialog(GUISecondPage.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>There are no passwords!");
                     }
@@ -121,6 +124,8 @@ public class GUISecondPage extends JFrame {
                         }
                     }
                 } catch (FileNotFoundException ex) {
+                    ex.printStackTrace();
+                } catch (IOException ex) {
                     ex.printStackTrace();
                 }
             }

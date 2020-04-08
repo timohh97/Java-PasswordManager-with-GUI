@@ -9,9 +9,11 @@ public class FileCreater {
 
 
     public static void createTextFile(String title, String password) throws IOException {
-        File file = new File("..\\..\\Desktop\\Passwords\\"+title+".txt");
-        file.createNewFile();
-        FileWriter fw = new FileWriter(file);
+        File passwordDirectory =new File("..\\..\\Desktop\\Passwords");
+        passwordDirectory.createNewFile();
+        File text = new File("..\\..\\Desktop\\Passwords\\"+title+".txt");
+        text.createNewFile();
+        FileWriter fw = new FileWriter(text);
         PrintWriter pw = new PrintWriter(fw);
 
         pw.println(password);

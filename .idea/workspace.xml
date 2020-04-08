@@ -7,7 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18612bae-bc12-4229-98cd-a385399a731d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileCreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileCreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileDeleter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileDeleter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUICreatePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUICreatePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUIDeletePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUIDeletePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUISecondPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISecondPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUISeePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUISeePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasswordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

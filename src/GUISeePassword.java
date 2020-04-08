@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class GUISeePassword extends JFrame {
     private JButton seePasswordButton;
 
 
-    public GUISeePassword(String title) throws FileNotFoundException {
+    public GUISeePassword(String title) throws IOException {
         setTitle(title);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         GridLayout mainLayout = new GridLayout(4,1);
@@ -75,10 +76,10 @@ public class GUISeePassword extends JFrame {
     }
 
 
-    private void initComponents() throws FileNotFoundException {
+    private void initComponents() throws IOException {
 
         label = new JLabel("Which password do you need? Please choose:");
-        List<PasswordWrapper> passwordWrapperList = PasswordReader.readAllPasswords();
+        List<PasswordWrapper> passwordWrapperList = FileReader.readAllPasswords();
         List<String> passwordTitlesList = new ArrayList<String>();
         for(PasswordWrapper wrap : passwordWrapperList) {
 

@@ -1,15 +1,17 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PasswordReader {
+public class FileReader {
 
 
-    public static List<PasswordWrapper> readAllPasswords() throws FileNotFoundException {
+    public static List<PasswordWrapper> readAllPasswords() throws IOException {
         List<PasswordWrapper> passwordWrapperList = new ArrayList<PasswordWrapper>();
         File passwordDirectory = new File("..\\..\\Desktop\\Passwords");
+        passwordDirectory.createNewFile();
 
         for(File textFile : passwordDirectory.listFiles())
         {

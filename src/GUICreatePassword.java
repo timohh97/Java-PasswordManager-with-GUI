@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -96,7 +95,7 @@ public class GUICreatePassword extends JFrame {
 
                         String titleOfNewPassword = descriptionOfPassword.getText();
 
-                        for(PasswordWrapper pw : PasswordReader.readAllPasswords())
+                        for(PasswordWrapper pw : FileReader.readAllPasswords())
                         {
                             if(pw.getTitleOfPassword().equals(titleOfNewPassword+".txt"))
                             {
@@ -116,7 +115,10 @@ public class GUICreatePassword extends JFrame {
 
                     } catch (FileNotFoundException ex) {
                         ex.printStackTrace();
-                    }  if(overwritePassword==0){
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                    if(overwritePassword==0){
                     String password = PasswordGenerator.generate(20);
                     try {
                         FileCreater.createTextFile(descriptionOfPassword.getText(),password);
