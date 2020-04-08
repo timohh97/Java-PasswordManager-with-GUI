@@ -11,7 +11,7 @@ public class FileReader {
     public static List<PasswordWrapper> readAllPasswords() throws IOException {
         List<PasswordWrapper> passwordWrapperList = new ArrayList<PasswordWrapper>();
         File passwordDirectory = new File("..\\..\\Desktop\\Passwords");
-        passwordDirectory.createNewFile();
+        passwordDirectory.mkdir();
 
         for(File textFile : passwordDirectory.listFiles())
         {

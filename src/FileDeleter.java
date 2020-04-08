@@ -6,8 +6,8 @@ public class FileDeleter {
 
     public static void deleteTextFile(String titleOfPassword) throws IOException {
 
-        File passwordDirectory = new File("..\\.\\Desktop");
-        passwordDirectory.createNewFile();
+        File passwordDirectory = new File("..\\..\\Desktop");
+        passwordDirectory.mkdir();
         File file = new File("..\\..\\Desktop\\Passwords\\"+titleOfPassword);
         System.out.println(file.delete());
 
