@@ -80,11 +80,12 @@ public class GUICreatePassword extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                boolean passwordAlreadyExists = false;
+                int overwritePassword = 0;
 
                 if(descriptionOfPassword.getText().length()==0)
                 {
-                    JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>Type in at least one character!");
+                    JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; " +
+                            "font-size: 36pt;'>Type in at least one character!");
                 }
                 else if(descriptionOfPassword.getText().length()>15)
                 {
@@ -99,8 +100,15 @@ public class GUICreatePassword extends JFrame {
                         {
                             if(pw.getTitleOfPassword().equals(titleOfNewPassword+".txt"))
                             {
-                                JOptionPane.showMessageDialog(GUICreatePassword.this, "<html><h1 style='font-family: Calibri; font-size: 36pt;'>A password for this title already exists!");
-                                passwordAlreadyExists = true;
+                                overwritePassword =JOptionPane.showConfirmDialog(GUICreatePassword.this
+                                        , "<html><h1 style='font-family: Calibri; font-size: 36pt;'>A password for this title already exists" +
+                                                ",<br>do you want to overwrite it?");
+
+                                if(overwritePassword==1)
+                                {
+                                    descriptionOfPassword.setText("");
+                                }
+
                             }
 
                         }
@@ -108,7 +116,7 @@ public class GUICreatePassword extends JFrame {
 
                     } catch (FileNotFoundException ex) {
                         ex.printStackTrace();
-                    }  if(!passwordAlreadyExists){
+                    }  if(overwritePassword==0){
                     String password = PasswordGenerator.generate(20);
                     try {
                         FileCreater.createTextFile(descriptionOfPassword.getText(),password);
