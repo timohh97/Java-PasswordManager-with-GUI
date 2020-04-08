@@ -7,7 +7,7 @@ public class FileDeleter {
     public static void deleteTextFile(String titleOfPassword){
 
 
-        File file = new File("C:\\Users\\timos\\Desktop\\Passwords\\"+titleOfPassword);
+        File file = new File("..\\..\\Desktop\\Passwords\\"+titleOfPassword);
         System.out.println(file.delete());
 
     }

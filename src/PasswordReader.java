@@ -9,7 +9,7 @@ public class PasswordReader {
 
     public static List<PasswordWrapper> readAllPasswords() throws FileNotFoundException {
         List<PasswordWrapper> passwordWrapperList = new ArrayList<PasswordWrapper>();
-        File passwordDirectory = new File("C:\\Users\\timos\\Desktop\\Passwords");
+        File passwordDirectory = new File("..\\..\\Desktop\\Passwords");
 
         for(File textFile : passwordDirectory.listFiles())
         {
