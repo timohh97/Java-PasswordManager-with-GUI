@@ -78,7 +78,7 @@ public class GUISeePassword extends JFrame {
     private void initComponents() throws FileNotFoundException {
 
         label = new JLabel("Which password do you need? Please choose:");
-        List<PasswordWrapper> passwordWrapperList = PasswordReader.readAllPasswords();
+        List<PasswordWrapper> passwordWrapperList = FileReader.readAllPasswords();
         List<String> passwordTitlesList = new ArrayList<String>();
         for(PasswordWrapper wrap : passwordWrapperList) {
 

@@ -3,7 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -73,7 +72,7 @@ public class GUIDeletePassword extends JFrame {
     private void initComponents() throws FileNotFoundException {
 
         label = new JLabel("Which password do you want to delete? Please choose:");
-        java.util.List<PasswordWrapper> passwordWrapperList = PasswordReader.readAllPasswords();
+        java.util.List<PasswordWrapper> passwordWrapperList = FileReader.readAllPasswords();
         List<String> passwordTitlesList = new ArrayList<String>();
         for(PasswordWrapper wrap : passwordWrapperList) {
 

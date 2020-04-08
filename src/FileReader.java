@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PasswordReader {
+public class FileReader {
 
 
     public static List<PasswordWrapper> readAllPasswords() throws FileNotFoundException {
