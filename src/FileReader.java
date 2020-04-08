@@ -10,6 +10,7 @@ public class FileReader {
     public static List<PasswordWrapper> readAllPasswords() throws FileNotFoundException {
         List<PasswordWrapper> passwordWrapperList = new ArrayList<PasswordWrapper>();
         File passwordDirectory = new File("C:\\Users\\timos\\Desktop\\Passwords");
+        passwordDirectory.mkdir();
 
         for(File textFile : passwordDirectory.listFiles())
         {
