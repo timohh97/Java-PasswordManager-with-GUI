@@ -76,7 +76,7 @@ public class GUIStartPage extends JFrame {
                     dispose();
                 }
                 else
-                { JOptionPane.showMessageDialog(GUIStartPage.this,"Wrong master password!");
+                { JOptionPane.showMessageDialog(GUIStartPage.this,"<html><h1 style='font-family: Calibri; font-size: 36pt;'>Wrong master password!");
                 }
             }
         });
