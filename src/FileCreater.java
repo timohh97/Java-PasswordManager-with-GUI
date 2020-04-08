@@ -9,7 +9,8 @@ public class FileCreater {
 
 
     public static void createTextFile(String title, String password) throws IOException {
-        File file = new File("C:\\Users\\timos\\Desktop\\Passwords\\"+title+".txt");
+        String home = System.getProperty("user.home");
+        File file = new File(home+"\\Desktop\\Passwords\\"+title+".txt");
         file.createNewFile();
         FileWriter fw = new FileWriter(file);
         PrintWriter pw = new PrintWriter(fw);
